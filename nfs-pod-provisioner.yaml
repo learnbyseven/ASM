@@ -29,11 +29,11 @@ spec:
             - name: PROVISIONER_NAME
               value: nfs-storage
             - name: NFS_SERVER
-              value: 192.168.1.35
+              value: 172.31.43.15
             - name: NFS_PATH
               value: /mydata
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 192.168.1.35
+            server: 172.31.43.15
             path: /mydata
